@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CyberSafe - Awareness & Protection Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>CyberSafe</h1>
+<p>Cybersecurity Awareness & Protection Platform</p>
+</header>
+
+<nav>
+<a href="#tools">Tools</a>
+<a href="#phishing">Phishing Test</a>
+<a href="#quiz">Quiz</a>
+<a href="#about">About</a>
+</nav>
+
+<section id="tools">
+<h2>🔐 Password Tools</h2>
+<div class="card">
+<input type="text" id="password" placeholder="Enter password">
+<button onclick="checkPassword()">Analyze</button>
+<button onclick="generatePassword()">Generate</button>
+<div class="progress"><div id="bar" class="progress-bar"></div></div>
+<p id="result"></p>
+<p id="crackTime"></p>
+</div>
+</section>
+
+<section id="phishing">
+<h2>🎯 Phishing Detection</h2>
+<div class="card">
+<p id="emailText"></p>
+<button onclick="answerPhish(true)">Phishing</button>
+<button onclick="answerPhish(false)">Safe</button>
+<p id="phishResult"></p>
+<p id="phishScore"></p>
+</div>
+</section>
+
+<section id="quiz">
+<h2>🧠 Security Quiz</h2>
+<div class="card">
+<p id="question"></p>
+<div id="answers"></div>
+<p id="quizResult"></p>
+</div>
+</section>
+
+<section id="about">
+<h2>👤 About Me</h2>
+<p>I am Sekegor Oghenetega Joshua, passionate about cybersecurity and digital defense. I build tools to promote safer digital practices.</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
